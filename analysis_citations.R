@@ -3,12 +3,12 @@ library(RPostgres)
 
 dbDisconnect(db)
 db = dbConnect(Postgres(),
-               user = read.csv("admin/db_connection.csv")$user,
-               password = read.csv("admin/db_connection.csv")$pw,
-               host = read.csv("admin/db_connection.csv")$host,
-               port = 5432,
-               dbname = read.csv("admin/db_connection.csv")$dbname,
-               options=paste("-c search_path=",read.csv("admin/db_connection.csv")$schema,sep = ""))
+               user = read.csv("")$user,
+               password = read.csv("")$pw,
+               host = read.csv("")$host,
+               port = ,
+               dbname = read.csv("v")$dbname,
+               options=paste("-c search_path=",read.csv("")$schema,sep = ""))
 
 
 
